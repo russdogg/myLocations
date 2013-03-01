@@ -6,19 +6,23 @@
 //  Copyright (c) 2013 RussDesigns. All rights reserved.
 //
 
-#import "MyLocationsFirstViewController.h"
+#import "CurrentLocationViewController.h"
 
-@interface MyLocationsFirstViewController ()
-
-@end
-
-@implementation MyLocationsFirstViewController
+@implementation CurrentLocationViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation) interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -17,7 +17,7 @@
 		C18E9CD716E08A2B00B14ACA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18E9CD616E08A2B00B14ACA /* Default@2x.png */; };
 		C18E9CD916E08A2B00B14ACA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18E9CD816E08A2B00B14ACA /* Default-568h@2x.png */; };
 		C18E9CDC16E08A2B00B14ACA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18E9CDA16E08A2B00B14ACA /* MainStoryboard.storyboard */; };
-		C18E9CDF16E08A2B00B14ACA /* MyLocationsFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18E9CDE16E08A2B00B14ACA /* MyLocationsFirstViewController.m */; };
+		C18E9CDF16E08A2B00B14ACA /* CurrentLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18E9CDE16E08A2B00B14ACA /* CurrentLocationViewController.m */; };
 		C18E9CE116E08A2B00B14ACA /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = C18E9CE016E08A2B00B14ACA /* first.png */; };
 		C18E9CE316E08A2B00B14ACA /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18E9CE216E08A2B00B14ACA /* first@2x.png */; };
 		C18E9CE616E08A2B00B14ACA /* MyLocationsSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18E9CE516E08A2B00B14ACA /* MyLocationsSecondViewController.m */; };
@@ -40,8 +40,8 @@
 		C18E9CD616E08A2B00B14ACA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C18E9CD816E08A2B00B14ACA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C18E9CDB16E08A2B00B14ACA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C18E9CDD16E08A2B00B14ACA /* MyLocationsFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLocationsFirstViewController.h; sourceTree = "<group>"; };
-		C18E9CDE16E08A2B00B14ACA /* MyLocationsFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLocationsFirstViewController.m; sourceTree = "<group>"; };
+		C18E9CDD16E08A2B00B14ACA /* CurrentLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentLocationViewController.h; sourceTree = "<group>"; };
+		C18E9CDE16E08A2B00B14ACA /* CurrentLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentLocationViewController.m; sourceTree = "<group>"; };
 		C18E9CE016E08A2B00B14ACA /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		C18E9CE216E08A2B00B14ACA /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		C18E9CE416E08A2B00B14ACA /* MyLocationsSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLocationsSecondViewController.h; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 				C18E9CD116E08A2B00B14ACA /* MyLocationsAppDelegate.h */,
 				C18E9CD216E08A2B00B14ACA /* MyLocationsAppDelegate.m */,
 				C18E9CDA16E08A2B00B14ACA /* MainStoryboard.storyboard */,
-				C18E9CDD16E08A2B00B14ACA /* MyLocationsFirstViewController.h */,
-				C18E9CDE16E08A2B00B14ACA /* MyLocationsFirstViewController.m */,
+				C18E9CDD16E08A2B00B14ACA /* CurrentLocationViewController.h */,
+				C18E9CDE16E08A2B00B14ACA /* CurrentLocationViewController.m */,
 				C18E9CE016E08A2B00B14ACA /* first.png */,
 				C18E9CE216E08A2B00B14ACA /* first@2x.png */,
 				C18E9CE416E08A2B00B14ACA /* MyLocationsSecondViewController.h */,
@@ -197,7 +197,7 @@
 			files = (
 				C18E9CCF16E08A2B00B14ACA /* main.m in Sources */,
 				C18E9CD316E08A2B00B14ACA /* MyLocationsAppDelegate.m in Sources */,
-				C18E9CDF16E08A2B00B14ACA /* MyLocationsFirstViewController.m in Sources */,
+				C18E9CDF16E08A2B00B14ACA /* CurrentLocationViewController.m in Sources */,
 				C18E9CE616E08A2B00B14ACA /* MyLocationsSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +286,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyLocations/MyLocations-Prefix.pch";
 				INFOPLIST_FILE = "MyLocations/MyLocations-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -297,6 +298,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyLocations/MyLocations-Prefix.pch";
 				INFOPLIST_FILE = "MyLocations/MyLocations-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
