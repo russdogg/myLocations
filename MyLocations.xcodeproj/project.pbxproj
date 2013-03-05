@@ -23,6 +23,7 @@
 		C18E9CE616E08A2B00B14ACA /* MyLocationsSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18E9CE516E08A2B00B14ACA /* MyLocationsSecondViewController.m */; };
 		C18E9CE816E08A2B00B14ACA /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = C18E9CE716E08A2B00B14ACA /* second.png */; };
 		C18E9CEA16E08A2B00B14ACA /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18E9CE916E08A2B00B14ACA /* second@2x.png */; };
+		C18E9CF116E32F8600B14ACA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18E9CF016E32F8600B14ACA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		C18E9CE516E08A2B00B14ACA /* MyLocationsSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLocationsSecondViewController.m; sourceTree = "<group>"; };
 		C18E9CE716E08A2B00B14ACA /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		C18E9CE916E08A2B00B14ACA /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		C18E9CF016E32F8600B14ACA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18E9CF116E32F8600B14ACA /* CoreLocation.framework in Frameworks */,
 				C18E9CC316E08A2B00B14ACA /* UIKit.framework in Frameworks */,
 				C18E9CC516E08A2B00B14ACA /* Foundation.framework in Frameworks */,
 				C18E9CC716E08A2B00B14ACA /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +70,7 @@
 		C18E9CB616E08A2B00B14ACA = {
 			isa = PBXGroup;
 			children = (
+				C18E9CF016E32F8600B14ACA /* CoreLocation.framework */,
 				C18E9CC816E08A2B00B14ACA /* MyLocations */,
 				C18E9CC116E08A2B00B14ACA /* Frameworks */,
 				C18E9CC016E08A2B00B14ACA /* Products */,
@@ -323,6 +327,7 @@
 				C18E9CEF16E08A2B00B14ACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
